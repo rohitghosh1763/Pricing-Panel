@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: 'open sans';
+}
+
+body {
+	background-color: #60a9ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.panel {
+	display: flex;
+	max-width: 960px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 25px;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.pricing-plan {
+	border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+	border-bottom: none;
+}
+
+.pricing-img {
+	width: 300px;
+	height: 200px;
+}
+
+.pricing-header {
+	font-size: 20px;
+	color: #888;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+.pricing-features {
+	margin: 50px 0px 25px;
+	color: #016ff9;
+}
+
+.pricing-features-item {
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 10px 30px;
+	border-top: 1px solid #e1f1ff;
+	border-bottom: 1px solid #e1f1ff;
+
+}
+
+.pricing-price {
+	display: block;
+	font-size: 30px;
+	color: #016ff9;
+	font-weight: 600;
+	font-weight: 700;
+}
+
+.pricing-button {
+	position: relative;
+	border: 1px solid #9dd1ff;
+	border-radius: 10px;
+	padding: 15px 35px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #348efe;
+	display: inline-block;
+	margin: 25px 0px;
+	text-decoration: none;
+	transition: background-color 200ms ease-in-out
+}
+.pricing-button:hover, .pricing-button:focus{
+	background-color: #e1f1ff;
+}
+@media (min-width:600px){
+	.panel{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.pricing-plan{
+		border-bottom: none;
+		border-right: 1px solid #e1f1ff;
+		padding: 0px 18px;
+	}
+	.pricing-plan:last-child{
+		border-right: none;
+	}
+	
+}
